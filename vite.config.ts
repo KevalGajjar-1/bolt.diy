@@ -11,7 +11,7 @@ dotenv.config();
 export default defineConfig((config) => {
   return {
     server:{
-      host: true
+      allowedHosts: ['localhost','bolt-diy-8cal.onrender.com']
     },
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
