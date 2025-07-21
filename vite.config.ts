@@ -10,6 +10,9 @@ dotenv.config();
 
 export default defineConfig((config) => {
   return {
+    server:{
+      host: true
+    },
     define: {
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
     },
